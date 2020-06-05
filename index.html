@@ -86,13 +86,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Math-Journey"><a href="#Math-Journey" class="headerlink" title="Math Journey"></a>Math Journey</h2><h3 id="Hexo-Math-Plugin"><a href="#Hexo-Math-Plugin" class="headerlink" title="Hexo Math Plugin"></a>Hexo Math Plugin</h3><p>More info: <a href="https://linkinpark213.com/2018/04/24/mathjax/" target="_blank" rel="noopener">MathJax</a></p>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>$$\lim_{n\rightarrow \infty}(1+2^n+3^n)^\frac{1}{x+\sin n}$$</p>
-
+        <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script> -->
+<h2 id="Math-Journey"><a href="#Math-Journey" class="headerlink" title="Math Journey"></a>Math Journey</h2><h3 id="Hexo-Math-Plugin"><a href="#Hexo-Math-Plugin" class="headerlink" title="Hexo Math Plugin"></a>Hexo Math Plugin</h3><p>More info: </p>
+<ul>
+<li><a href="https://linkinpark213.com/2018/04/24/mathjax/" target="_blank" rel="noopener">MathJax1</a></li>
+<li><a href="https://cps.ninja/2019/03/16/hexo-with-latex/" target="_blank" rel="noopener">MathJax2</a></li>
+</ul>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><script type="math/tex; mode=display">\lim_{n\rightarrow \infty}(1+2^n+3^n)^\frac{1}{x+\sin n}</script>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/06/04/test0/" data-id="ckb1n47oq0001m4rv0c9z7auc" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/06/04/test0/" data-id="ckb1ny8th0001t1rv9j6qhhs8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -126,22 +130,18 @@
       
         <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
 <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/06/03/hello-world/" data-id="ckb1n47oc0000m4rv1cd1893a" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/06/03/hello-world/" data-id="ckb1ny8tb0000t1rvf0a79bkv" class="article-share-link">Share</a>
       
       
     </footer>
@@ -233,6 +233,23 @@
 
 
 
-  </div><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  </div><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config("");
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 </body>
 </html>
