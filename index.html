@@ -64,6 +64,50 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-representation-theory" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/01/representation-theory/" class="article-date">
+  <time datetime="2020-07-02T06:31:06.000Z" itemprop="datePublished">2020-07-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/01/representation-theory/">representation-theory</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Representation-Theory"><a href="#Representation-Theory" class="headerlink" title="Representation Theory"></a>Representation Theory</h2><h3 id="Maschke’s-Theorem"><a href="#Maschke’s-Theorem" class="headerlink" title="Maschke’s Theorem"></a>Maschke’s Theorem</h3><ul>
+<li><a href="https://www.youtube.com/watch?v=-3q6C558yog" target="_blank" rel="noopener">ICM Lecture</a></li>
+</ul>
+<h2 id="BSD-Conjecture"><a href="#BSD-Conjecture" class="headerlink" title="BSD Conjecture"></a>BSD Conjecture</h2><ul>
+<li><a href="https://www.youtube.com/results?search_query=theory+of+eisenstein+series" target="_blank" rel="noopener">Eisenstein Series</a></li>
+<li><a href="https://www.youtube.com/watch?v=J5inNq5qN0Y" target="_blank" rel="noopener">Darmon 1</a></li>
+<li><a href="https://www.youtube.com/watch?v=oqMaziDIBYY" target="_blank" rel="noopener">Darmon 2</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/07/01/representation-theory/" data-id="ckc9jv4mx0002n8rvc0pw47ra" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-docker" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/06/19/docker/" class="article-date">
@@ -90,11 +134,11 @@
 <h3 id="Use"><a href="#Use" class="headerlink" title="Use"></a>Use</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">kubectl config set-context test --namespace&#x3D;test \</span><br><span class="line">--cluster&#x3D;minikube \</span><br><span class="line">--user&#x3D;minikue</span><br><span class="line"></span><br><span class="line">kubectl config use-context minikube</span><br><span class="line">kubectl config unset current-context</span><br><span class="line">kubectl config delete-context ***</span><br><span class="line"></span><br><span class="line">kubectl -n test get pods --watch</span><br></pre></td></tr></table></figure>
 <h4 id="Create-NameSpace"><a href="#Create-NameSpace" class="headerlink" title="Create NameSpace"></a>Create NameSpace</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat yaml&#x2F;namespace.yaml | envsubst | kubectl apply --namespace&#x3D;&#x3D;test -f -</span><br></pre></td></tr></table></figure>
 <h3 id="Cluster-SetUp"><a href="#Cluster-SetUp" class="headerlink" title="Cluster SetUp"></a>Cluster SetUp</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">brew install minikube</span><br><span class="line">minikube start</span><br></pre></td></tr></table></figure>
-<h2 id="Docker-CheatSheet"><a href="#Docker-CheatSheet" class="headerlink" title="Docker CheatSheet"></a>Docker CheatSheet</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">docker ps -aq</span><br><span class="line">docker stop $(docker ps -aq)</span><br><span class="line">docker rm $(docker ps -aq)</span><br><span class="line"></span><br><span class="line">docker network ls</span><br><span class="line">docker network rm network_name</span><br><span class="line"></span><br><span class="line">docker images -a</span><br><span class="line"></span><br><span class="line">docker logs -t container_id</span><br></pre></td></tr></table></figure>
+<h2 id="Docker-CheatSheet"><a href="#Docker-CheatSheet" class="headerlink" title="Docker CheatSheet"></a>Docker CheatSheet</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">docker ps -aq</span><br><span class="line">docker stop $(docker ps -aq)</span><br><span class="line">docker rm $(docker ps -aq)</span><br><span class="line"></span><br><span class="line">docker network ls</span><br><span class="line">docker network rm network_name</span><br><span class="line"></span><br><span class="line">docker images -a</span><br><span class="line"></span><br><span class="line">docker logs -t container_id</span><br><span class="line">docker logs redis -f </span><br><span class="line">docker help logs</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/06/19/docker/" data-id="ckbr288910001r1zo7by58nhh" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/06/19/docker/" data-id="ckc9jv4my0003n8rvhnjb3x5i" class="article-share-link">Share</a>
       
       
     </footer>
@@ -135,7 +179,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/06/14/spark/" data-id="ckbr288950004r1zoglhh8pzo" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/06/14/spark/" data-id="ckc9jv4n10005n8rv2fw3f83r" class="article-share-link">Share</a>
       
       
     </footer>
@@ -182,7 +226,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/06/09/redis/" data-id="ckbr288960005r1zo5v5afu1z" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/06/09/redis/" data-id="ckc9jv4n40006n8rvf9s70g4t" class="article-share-link">Share</a>
       
       
     </footer>
@@ -221,7 +265,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/06/08/ai-journey-0/" data-id="ckbr288960006r1zo37t90r7h" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/06/08/ai-journey-0/" data-id="ckc9jv4mz0004n8rv9tuh5u7i" class="article-share-link">Share</a>
       
       
     </footer>
@@ -277,7 +321,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/06/08/go-journey-0/" data-id="ckbr288940003r1zoeff04bml" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/06/08/go-journey-0/" data-id="ckc9jv4n80007n8rvfeq06zd5" class="article-share-link">Share</a>
       
       
     </footer>
@@ -353,7 +397,7 @@ P(A_i \mid B) = \frac{P(B\mid A)P(A_i)}{\sum_{j=1}^{n}P(A_j)P(B \mid A_j)}</scri
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/06/04/hexo-latex/" data-id="ckbr288930002r1zoakab0176" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/06/04/hexo-latex/" data-id="ckc9jv4mm0000n8rv3pwcgzvx" class="article-share-link">Share</a>
       
       
     </footer>
@@ -398,7 +442,7 @@ P(A_i \mid B) = \frac{P(B\mid A)P(A_i)}{\sum_{j=1}^{n}P(A_j)P(B \mid A_j)}</scri
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/06/03/hello-world/" data-id="ckbr2888m0000r1zo99i0agbk" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/06/03/hello-world/" data-id="ckc9jv4mv0001n8rvbbzhb6pn" class="article-share-link">Share</a>
       
       
     </footer>
@@ -426,7 +470,7 @@ P(A_i \mid B) = \frac{P(B\mid A)P(A_i)}{\sum_{j=1}^{n}P(A_j)P(B \mid A_j)}</scri
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">June 2020</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">June 2020</a></li></ul>
     </div>
   </div>
 
@@ -437,6 +481,10 @@ P(A_i \mid B) = \frac{P(B\mid A)P(A_i)}{\sum_{j=1}^{n}P(A_j)P(B \mid A_j)}</scri
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2020/07/01/representation-theory/">representation-theory</a>
+          </li>
         
           <li>
             <a href="/2020/06/19/docker/">docker</a>
@@ -452,10 +500,6 @@ P(A_i \mid B) = \frac{P(B\mid A)P(A_i)}{\sum_{j=1}^{n}P(A_j)P(B \mid A_j)}</scri
         
           <li>
             <a href="/2020/06/08/ai-journey-0/">AI-Journey-0</a>
-          </li>
-        
-          <li>
-            <a href="/2020/06/08/go-journey-0/">Go-Journey-0</a>
           </li>
         
       </ul>
